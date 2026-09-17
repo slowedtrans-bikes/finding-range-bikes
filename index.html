@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridgeline Rebuilds — Used Mountain Bikes</title>
+<meta name="description" content="Rebuilt and reconditioned used mountain bikes, for sale now and archived from past builds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Ridgeline Rebuilds</span>
+      <span class="brand-tagline">Used mountain bikes, rebuilt right</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" aria-current="page">For Sale</a>
+      <a href="archive.html">Archive</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="images/placeholder-hero.jpg" alt="Workshop where bikes are rebuilt">
+  </div>
+  <div class="hero-copy">
+    <div class="wrap">
+      <div class="hero-eyebrow">Currently in the shop</div>
+      <h1 class="hero-title">Rebuilt mountain bikes, ready for the trail</h1>
+      <p class="hero-sub">Every bike here has been torn down, inspected, and put back together properly before it's listed. Browse what's for sale now, or see the full archive of past builds below.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>40+</b><span>Bikes rebuilt</span></div>
+        <div class="hero-stat"><b>7</b><span>Years wrenching</span></div>
+        <div class="hero-stat"><b>3</b><span>Bikes for sale now</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="section-head">
+    <div>
+      <h2>For sale now</h2>
+      <p>Listed here and on Facebook Marketplace, eBay, and Pinkbike — click a bike for the full write-up and specs.</p>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div id="featured-slot"></div>
+  <div class="post-grid" id="listing-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Ridgeline Rebuilds</span>
+    <div class="footer-links">
+      <a href="https://facebook.com/marketplace" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://ebay.com" target="_blank" rel="noopener">eBay</a>
+      <a href="https://pinkbike.com/buysell" target="_blank" rel="noopener">Pinkbike</a>
+    </div>
+  </div>
+</footer>
+
+<script src="bikes.js"></script>
+<script src="main.js"></script>
+<script>
+  renderListingPage({
+    status: "for-sale",
+    gridId: "listing-grid",
+    featuredId: "featured-slot",
+    filterBarId: "filter-bar"
+  });
+</script>
+</body>
+</html>
